@@ -30,6 +30,10 @@ def reset_world():
     grass = Grass()
     game_world.add_object(grass, 2)
 
+    grass2 = Grass()
+    grass2.count = 1
+    game_world.add_object(grass2, 0)
+
 
 def update_world():
     game_world.update()
