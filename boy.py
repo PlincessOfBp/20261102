@@ -57,7 +57,7 @@ class Boy:
                 event.key == SDLK_SPACE and
                 self.state in ('IDLE', 'RUN')):
             ball_x = self.x + self.face_dir * 45
-            game_world.add_object(Ball(ball_x, self.y, self.face_dir))
+            game_world.add_object(Ball(ball_x, self.y, self.face_dir), 1)
             return
 
         if (event.type not in (SDL_KEYDOWN, SDL_KEYUP) or

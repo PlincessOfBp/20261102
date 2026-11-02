@@ -2,13 +2,13 @@
 
 # world = [] # 객체들의 리스트, 빈 리스트
 
-world = [[], []] # 객체들의 리스트, 리스트가 들어간 리스트.
+world = [[], [], []] # 객체들의 리스트, 리스트가 들어간 리스트.
 
 # 객체를 게임월드에 추가하는 함수
-def add_object(o, depth):
+def add_object(o, depth=0):
     world[depth].append(o)
 
-def add_objects(ol, depth):
+def add_objects(ol, depth=0):
     world[depth] += ol
 
 def remove_object(o):
