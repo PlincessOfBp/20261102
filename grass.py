@@ -13,7 +13,7 @@ class Grass:
         if self.count == 0:
             self.image.draw(400, 30)
         else:
-            self.image.draw(400, 40)
+            self.image.draw(400, 50)
 
     def update(self):
         pass
